@@ -1,0 +1,94 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgfplots}
+\usepackage{nccmath}
+\usepackage{mathtools}
+\usepackage{pgfplots}
+\usepackage{mathtools,amssymb}
+\usepackage{tikz}
+\usepackage{xcolor}
+\pgfplotsset{compat = newest}
+\author{Chris Camano: ccamano@sfsu.edu}
+\title{MATH301 Homework 2 }
+\date{2/8/2022}
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+\newcommand{\q}{\quadd}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand{\rtwo}{$\mathbb{R}^2$}
+\newcommand{\C}{$\mathbb{C}$}
+\newcommand{\tf}{\therefore}
+\begin{document}
+\maketitle
+\section{Section 1.5 Problems:4a,4e,4f,4g,8}\\
+$$ \text{Suppose} A=\{b,c,d\}\text{ and } B=\{a,b\} \text{ Find}:$$
+\textbf{1.5:4a}\\
+\[
+  (A \times B) \cap ( B \times B)
+\]
+\begin{align*}
+  (A \times B)=\{(b,a),(b,b),(c,a),(c,b),(d,a),(d,b)\}\\
+  (B \times B)=\{(a,a),(a,b),(b,a),(b,b))\}\\
+  \therefore \\
+    (A \times B) \cap ( B \times B)=\{(b,a),(b,b)\}
+\end{align*}\\\\
+\textbf{1.5:4e}\\
+\[
+  (A \times B) \cap B
+\]
+\begin{align*}
+  (A \times B)=\{(0,1),(0,2),(1,1),(1,2)\}\\
+  1,2 \notin (A \times B)\quadd \therefore (A \times B) \cap B=\emptyset
+\end{align*}
+\textbf{1.5:4f}\\
+\[
+  \mathcal{P}(A)\cap \mathcal{P}(B)
+\]
+\begin{align*}
+  \mathcal{P}(A)=\{\emptyset, \{b\},\{c\},\{d\},\{b,c\},\{b,d\},\{c,d\},\{b,c,d\}\\
+  \mathcal{P}(B)=\{\emptyset,\{a\},\{b\},\{a,b\}\\ \therefore
+    \mathcal{P}(A)\cap \mathcal{P}(B)=\{\emptyset,\{b\}
+\end{align*}
+\textbf{1.5:4g}\\
+\[
+    \mathcal{P}(A) - \mathcal{P}(B)
+\]
+\begin{align*}
+  \mathcal{P}(A)=\{\emptyset, \{b\},\{c\},\{d\},\{b,c\},\{b,d\},\{c,d\},\{b,c,d\}\\
+  \mathcal{P}(B)=\{\emptyset,\{a\},\{b\},\{a,b\}\\\tf
+  \mathcal{P}(A)-\mathcal{P}(B)=\{x|x\in\mathcal{P}(A),x\notin\mathcal{P}(B)\}=\{\{c\},\{d\},\{b,c\},\{b,d\},\{c,d\},\{b,c,d\}\\
+\end{align*}
+\textbf{1.5:8}\\
+See attached illustration, figure 1
+
+\section{Section 1.7 Problems 6,8,12,14}\\
+\textbf{1.7.6}\\
+See attached illustration, figure 2\\
+\textbf{1.7.8}\\
+See attached illustration, figure 3\\
+\textbf{1.7.12}\\
+The expression that describes this set it:
+\[
+(A-B)\cup (B\cap C)
+\]
+\textbf{1.7.14}\\
+The expression that describes this set is :
+\[
+  (A\cap B\cap C)\cap \Big((A-C)\cap(A-B)\Big)
+\]
+\section{4 dimensional cube illustration}\\
+See attached illustration, figure 4
+\section{Bonus }
+\end{document}
