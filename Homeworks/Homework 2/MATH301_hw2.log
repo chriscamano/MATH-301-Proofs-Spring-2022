@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.21)  9 FEB 2022 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.21)  10 FEB 2022 19:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -618,19 +618,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--38
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--48
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--48
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
 
  []
 
-./MATH301_hw2.tex:54: Undefined control sequence.
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
+
+ []
+
+./MATH301_hw2.tex:55: Undefined control sequence.
 <argument> ...)\}\\ 1,2 \notin (A \times B)\quadd 
                                                   \therefore (A \times B) \c...
-l.54 \end{align*}
+l.55 \end{align*}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -638,10 +643,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./MATH301_hw2.tex:54: Undefined control sequence.
+./MATH301_hw2.tex:55: Undefined control sequence.
 <argument> ...)\}\\ 1,2 \notin (A \times B)\quadd 
                                                   \therefore (A \times B) \c...
-l.54 \end{align*}
+l.55 \end{align*}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -650,50 +655,116 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--56
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--65
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
 [1
 
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+./MATH301_hw2.tex:76: Undefined control sequence.
+<recently read> \latex 
+                       
+l.76 This problem was very fun to type in $\latex
+                                                 $ and I think that the set ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./MATH301_hw2.tex:77: LaTeX Error: There's no line here to end.
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--80
+
+ []
+
+
+./MATH301_hw2.tex:82: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.77 \textbf
-            {1.7.6}\\
+l.82 \textbf
+            {1.7.6+++}\\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./MATH301_hw2.tex:92: LaTeX Error: There's no line here to end.
+Underfull \hbox (badness 10000) in paragraph at lines 82--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
+
+ []
+
+
+./MATH301_hw2.tex:100: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92 S
-      ee attached illustration, figure 4
+l.100 S
+       ee attached illustration, figure 4.\\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[2] (./MATH301_hw2.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
+
+ []
+
+[3] (./MATH301_hw2.aux) ) 
 Here is how much of TeX's memory you used:
- 23360 strings out of 478542
- 601275 string characters out of 5854402
+ 23361 strings out of 478542
+ 601280 string characters out of 5854402
  1025390 words of memory out of 5000000
- 40936 multiletter control sequences out of 15000+600000
+ 40937 multiletter control sequences out of 15000+600000
  411886 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,14n,108p,727b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -704,10 +775,10 @@ s/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
 2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on MATH301_hw2.pdf (2 pages, 79175 bytes).
+Output written on MATH301_hw2.pdf (3 pages, 83870 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
