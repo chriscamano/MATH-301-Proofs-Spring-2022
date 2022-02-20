@@ -1,0 +1,242 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgfplots}
+\usepackage{nccmath}
+\usepackage{mathtools}
+\usepackage{pgfplots}
+\usepackage{mathtools,amssymb}
+\usepackage{tikz}
+\usepackage{xcolor}
+\pgfplotsset{compat = newest}
+\author{Chris Camano: ccamano@sfsu.edu}
+\title{MATH 301 Homework  3 }
+\date{2/15/2022}
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+\newcommand{\q}{\quad}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\rtwo}{$\mathbb{R}^2$}
+\newcommand{\C}{$\mathbb{C}$}
+
+\begin{document}
+\maketitle
+\textbf{Problems }
+\begin{center}
+1. Section 2.3, Problems 2, 4, 6\\
+2. Section 2.5, Problems  4, 8. \\
+3. Section 2.6, Problem A2. \\
+4. Section 2.7, Problems 3, 8, 10. \\
+5. Section 2.10, Problems 1 and 2.\\
+\end{center}
+\section*{2.3}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Without changing their meanings, conver each of the following sentence into a sentence having the form "If P then Q"\\\\
+\textbf{Problem 2.3.2 +++}\\
+\begin{proof}
+  For a function to be continuous, it is sufficient to say that it is differentiable. \\
+  $$
+  \textbf{If a function is differentiable then it is a continuous function}$$
+  For this problem I feel that I understood how to articulate the expression as an if condition by identifying the mathematical arguments within the sentence and translating the realtionship.
+\end{proof}\\\\
+%
+\textbf{Problem 2.3.4 +++}\\
+\begin{proof}
+  A function is rational if it is a polynomial.\\
+  \[
+    \textbf{If a function is a polynomial then it is rational}
+  \]
+    For this problem I feel that I understood how to articulate the expression as an if condition by identifying the mathematical arguments within the sentence and translating the realtionship. This one was easier for me than number one due to my past education with polynomials
+\end{proof}\\\\
+%
+\textbf{Problem 2.3.6 +++}\\
+\begin{proof}
+  Whenever a surface has only one side, it is non-orientable
+  \[
+    \textbf{If a surface only has one side then it is non-orientable}
+  \]
+    For this problem I feel that I understood how to articulate the expression as an if condition by identifying the mathematical arguments within the sentence and translating the realtionship.
+\end{proof}\\\\
+%
+\section*{2.5}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\textbf{Problem 2.5.4 +++}\\
+\newcommand{\and}{\wedge}
+\begin{proof}
+  Write a truth table for the logical statement:
+  \[
+    \neg(P \lor Q) \lor (\neg P)
+  \]\\
+  \begin{displaymath}
+  \begin{array}{C|C|C|C|C|C}
+  % |c c|c| means that there are three columns in the table and
+  % a vertical bar ’|’ will be printed on the left and right borders,
+  % and between the second and the third columns.
+  % The letter ’c’ means the value will be centered within the column,
+  % letter ’l’, left-aligned, and ’r’, right-aligned.
+  P & Q & \neg P & P \lor Q& \neg(P \lor Q)&\neg(P \lor Q)\lor (\neg P)\\ % Use & to separate the columns
+  \hline % Put a horizontal line between the table header and the rest.
+  T & T & F & T & F & F\\
+  T & F & F & T & F & F\\
+  F & T & T & T & F & T\\
+  F & F & T & F & T & T\\
+  \end{array}
+  \end{displaymath}
+  The hardest part of this question for me was learning how to typeset the proof tables in LaTeX! Other than that the process of algorithmically segmenting a logical epression makes sense to me as it allows us to give individual attention to each sub-expression.
+\end{proof}\\\\
+%
+\textbf{Problem 2.5.8 +++}\\
+\begin{proof}
+  Write a truth table for the logical statement:
+  \[
+    P \lor ( Q \land \neg R)
+  \]
+  \begin{displaymath}
+    \begin{array}{C|C|C|C|C|C}
+      P & Q & R& \neg R & Q \land \neg R & P \lor (Q \land \neg R)\\
+      \hline
+      T & T & T & F & F & T\\
+      T & T & F & T & T & T\\
+      T & F & T & F & F & T\\
+      T & F & F & T & F & T\\
+      F & T & T & F & F & F\\
+      F & T & F & T & T & T\\
+      F & F & T & F & F & F\\
+      F & F & F & T & F & F\\
+    \end{array}
+  \end{displaymath}
+  This problem was a good exercise working with three variables in a logical expression. I really enjoyed studying the pattern of the first three columns
+\end{proof}\\
+%
+\section*{2.6}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\textbf{Problem A2 +++}\\
+\begin{proof}
+  Use truth tables to show that the following statements are logically equivilant
+  \[
+    P \land ( Q \lor R )=(P \lor Q) \land (P \lor R)
+  \]
+  \\
+  \[
+    P \land ( Q \lor R )
+  \]
+  \begin{displaymath}
+    \begin{array}{C|C|C|C|C}
+      P & Q & R& Q \lor R & P \land (Q \lor R) \\
+      \hline
+      T & T & T & T & T \\
+      T & T & F & T & T \\
+      T & F & T & T & T \\
+      T & F & F & F & T \\
+      F & T & T & T & T \\
+      F & T & F & T & F \\
+      F & F & T & T & F \\
+      F & F & F & F & F \\
+    \end{array}
+  \end{displaymath}
+  \[
+    (P \lor Q) \land (P \and R)
+  \]
+  \begin{displaymath}
+    \begin{array}{C|C|C|C|C|C}
+      P & Q & R& (P \lor Q) & (P \lor R)&(P \lor Q) \land (P \lor R)\\
+      \hline
+      T & T & T & T & T & T\\
+      T & T & F & T & T & T\\
+      T & F & T & T & T & T\\
+      T & F & F & T & T & T\\
+      F & T & T & T & T & T\\
+      F & T & F & T & F & F\\
+      F & F & T & F & T & F\\
+      F & F & F & F & F & F\\
+    \end{array}
+  \end{displaymath}
+  For this problem there were alot of moving parts and it was sometimes difficult to look through the rows of the truth values. In the future I think I would prefer to make an adjaceny matrix so the numbers are right next to eachother
+\end{proof}\\\\
+%
+\section*{2.7}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Write the following as english sentences. Say whether they are true or false.\\\\
+\textbf{Problem 2.7.3 +++}\\
+\begin{proof}
+  \[
+    \exists a \in \R,\forall x \in \R, ax=x
+  \]
+
+    \textbf{There exists real number a such that for all real numbers a multipied by a given number equals that original number}.
+
+  This statement is true and is justified by the existence of the number 1.\\
+  This problem felt very intuitive to me and it clicked after working on it that this is the definiton of the behavior of multiplying by one.
+\end{proof}\\\\
+%
+\textbf{Problem 2.7.8 +++}\\
+\begin{proof}
+  \[
+    \forall n \in \mathbb{Z}, \exists X \subseteq \mathbb{N},|X|=n}
+  \]
+
+    \textbf{For any given integer n there exists a subset of the natural numbers X such that the cardinality of that subset is n}
+  \\
+  This statement is false because there exists negative numbers but there does not exist a set with a negative cardinality.
+
+  In other words:
+  \[
+    \nexists X \subseteq \mathbb{N} :  |X|< 0, \textbf{ but }\exists n \in \mathbb{Z} : n< 0
+  \]
+  \\ I really really loved this problem because it challenged me to think about the properties of sets and what can and cannot be done while describing them.
+\end{proof}\\\\
+%
+\textbf{Problem 2.7.10 +++}\\
+\begin{proof}
+  \[
+    \exists m \in \mathbb{Z}, \forall n \in \mathbb{Z} m=n+5
+  \]
+  \textbf{There exists some integer m such that m=n+5 for all integers n}\\
+  This statement is very false consider some number m expressed as a sum of a number n and 5. Now increment that number n by one. this disproves that for all integers n m=n+5 as we have identifed a counter example.\\
+  This problem was a good exercise on parsng the existential quantifier. I am confident in my answer
+\end{proof}\\\\
+%
+\section*{2.10}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Negate the following\\\\
+\textbf{Problem 2.10.1 +++}\\
+\begin{proof}
+  The number x is positive, but the number y is not positive\\
+  Let P= the number x is positive and Q= the number y is not positive. Then we start with :
+  \[
+    P \land Q
+  \]
+  \textbf{Negation}\\
+  \[
+    \neg( P \land Q)= \neg P \lor \neg Q
+  \]
+  By De'Morgans. Therefore the negation can be translated as:
+  The number x is not positive or the number y is not positive\\
+  This intuitivley makes sense too me as this is the description of the two events that define inputs to the propositional function that would break invert its behavior.
+  \end{proof}\\
+\end{proof}\\\\
+%
+\textbf{Problem 2.10.2 +++}\\
+\begin{proof}
+  If x is prime then $\sqrt{x}$ is not a rational number
+  Let P be "x is prime"\\
+  Let Q  be "$\sqrt{x}$ is not rational"\\
+  \[
+    P \rightarrow Q
+  \]
+  \[
+    \neg (P \rightarrow Q)= P \land \neg Q, \therefore
+  \]
+  The negation is: "x is prime and $\sqrt{x}$ is rational"\\
+  I am confident with this problem and have built up an understanding that negating statement is a way of describing the opposite.
+\end{proof}\\\\
+\end{document}
