@@ -1,0 +1,180 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgfplots}
+\usepackage{nccmath}
+\usepackage{mathtools}
+\usepackage{pgfplots}
+\usepackage{mathtools,amssymb}
+\usepackage{tikz}
+\usepackage{xcolor}
+\pgfplotsset{compat = newest}
+\author{Chris Camano: ccamano@sfsu.edu}
+\title{MATH 301 Homework 4 }
+\date{2/17/2022}
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+\newcommand{\q}{\quad}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\rtwo}{$\mathbb{R}^2$}
+\newcommand{\C}{$\mathbb{C}$}
+\newcommand{\sect}[1]{\section*{#1}}
+\begin{document}
+\maketitle
+%\[
+%  p_{ij}=\frac{\frac{e^{-||x_i-x_j||_2^2/2\sigma_i^2}}{\sum_{k\neq i}e^{-||x_i-x_k||_2^2/2\sigma_i^2}}+\frac{e^{-||x_j-x_i||_2^2/2\sigma_j^2}}{\sum_{k\neq j}e^{-||x_j-x_k||_2^2/2\sigma_j^2}}}{2N}
+%\]
+%\[
+%  p_{ij}=\frac{\Big[\sum_{k\neq j}e^{\frac{-||x_i-x_j||_2^2-||x_j-x_k||_2^2}{4\sigma_i^2\sigma_j^2}}
+%  +
+%  \sum_{k\neq i}e^{\frac{-||x_j-x_i||_2^2-||x_i-x_k||_2^2}{4\sigma_i^2\sigma_j^2}}\Big]2N}{\sum_{k \neq i}\sum_{l\neq j}e^{\frac{-\sigma_j^2||x_j-x_k||_2^2-\sigma_i^2||x_j-x_l||_2^2}{2\sigma_i^2\sigma_j^2}}}
+%\]%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sect{Problem 1.Negate the following implications.}
+\begin{proof}
+  \begin{itemize}[label={--}]
+    \item \textbf{(a)+++}\\ If I finish my homework early, I will join you for a movie.\\
+    Let I finish my homework be P and I will join you for a movie be Q $\therfore$
+    \[
+      P \rightarrow Q
+    \]
+    The negation:
+    \[
+      \neg (P \rightarrow Q)= P \land \neg Q
+    \]
+    This negation makes sense to me and can be thought of as a lie! The negation encapsulates the concept of finishing homework early and not going to the movie.
+    \item  \textbf{(b)+++}\\ If $n^2$ is divisible by 12, then n is even or n is a multiple of three.\\
+    An interpretation of this statement learned from the in class activity is:
+    \[
+      \forall n \in \mathbb{Z} : 12|n^2, (n \in \mathbb{E}) \lor (3|n)
+    \]
+    The negation:
+    \[
+      \neg(   \forall n \in \mathbb{Z} : 12|n^2, (n \in \mathbb{E}) \lor (3|n))=
+    \]
+    \[
+      \exists n \in \mathbb{Z} : 12|n^2 \land ( n \notin \mathbb{E}) \land (3\nmid n))
+    \]
+    Which can be understood as the statement there exists some integer n such that 12 divides $n^2$ and n is not even and 3 does not divide n. After our disussion in class about this problem it makes sense to me and is a good exercise on identifying situations where we are making universal claims instead of singular ones.
+  \end{itemize}
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sect{Problem  2. Consider the two statements: \textbf{+++}}
+\newcommand{\Z}{\mathbb{Z}}
+\begin{proof}
+  P: For all integers x, there exists an integer y such that $y > x.$
+  Q: There exists an integer x such that, for all integers y, we have $y > x.$
+  \\
+  Let us first start by translating these statements to their  logical forms:
+  \[
+    P=\forall x \in \Z(\exists y \in \Z: y>x)
+  \]
+  \[
+    Q=(\exists x \in \Z: \forall y \in \Z,y>x)
+  \]
+  \begin{itemize}[label={--}]
+    \item   (a)  One of these statements is true and the other is false. Determine which statement is true and justify your claim.\\\\
+    The first statement P is true. For all integers x you can always find some integer y such that the value of y is greater than the value of x. This is due to the infinite nature of the integers, meaning you can always look ahead past your selection of x to find a greater value.
+    \item   (b)  Discuss why the other statement is false.\\\\
+    Q is false because  $\nexists x: \forall y \in \Z, y>x$ This is to say that there is no single value x that is smaller than all other integers. Because the intergers are infinite whatever value we pick for x there will always exist some integer y with a lower value.
+    \item  (c)  Write down the negation of each statements.
+    \[
+      \neg P=\neg (\forall x \in \Z(\exists y \in \Z: y>x)=\exists x \in \Z(\forall y \in \Z: y \leq x)
+    \]
+    \[
+    \neg Q= \neg(\exists x \in \Z: \forall y \in \Z,y>x)=\forall x \in \Z: \exists y \in \Z, y \leq x
+    \]
+  \end{itemize}
+  Overall this question was very fun and good practice with nested quantifiers. I think that I understand how to translate to the negated form the trickiest part for me is placing the such that at the end of the negation.
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sect{Problem 3. \textbf{+++} Consider the statement:}
+\begin{proof}
+  “For every positive integer n, there exists a prime number between n and n + 10.”\\
+  \begin{itemize}[label={--}]
+    \item (a) Do you think the statement is true or false. Why?\\\\
+    I think that this statement is false due to a very compelling counterargument identified by my in class partner Ian which states that if n is equal to 200 there is not a prime number between 200 and 210.This can be verified computationally with most programming languages
+    \item (b) Write down the negation of this statement.
+    \\\\
+    The statement is first stated as follows:
+    \[
+      \forall n \in \Z^+(\exists p \in \textbf{P}: n<p<n+10)
+    \]
+    where \textbf{P} is the set of prime numbers. \\\\
+    The Negation:
+    \[
+      \neg (\forall n \in \Z^+(\exists p \in \textbf{P}: n<p<n+10))=\exists n \in \Z^+(\forall p \in \textbf{P}:(n\geq p)\land (n+10 \geq p))
+    \]
+    This negation reads: there exists some positive integer n forall primes such that n is greater than or equal to a given prime p and n+10 is also greater than or equal to that same p
+  \end{itemize}
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sect{Problem 4}
+\begin{proof}
+  \begin{itemize}[label={--}]
+    \item (a) 2.10.2 \textbf{+++} \\\\
+  If x is prime then $\sqrt{x}$ is not a rational number
+  Let P be "x is prime"\\
+  Let Q  be "$\sqrt{x}$ is not rational"\\
+  \[
+    P \rightarrow Q
+  \]
+  \[
+    \neg (P \rightarrow Q)= P \land \neg Q, \therefore
+  \]
+  The negation is: "x is prime and $\sqrt{x}$ is rational"\\
+  I am confident with this problem and have built up an understanding that negating statement is a way of describing the opposite.
+  \item (b) 2.10.4 \textbf{+++}\\\\
+  For every positive number $\epsilon$, there is a positive number $\delta$ such that $|x-a|<\delta$ implies $|f(x)-f(a)|<\epsilon$
+  \[
+    \forall \epsilon \in \R^+(\exists \delta \in \R^+:(|x-a|<\delta) \rightarrow (|f(x)-f(a)|<\epsilon) )
+  \]
+  The negation:
+  \[
+    \exists \epsilon \in \R^+:\forall \delta\in \R^+, (|x-a|<\delta)\land (|f(x)-f(a)|\geq\epsilon))
+  \]
+  The negation of this statement reads there exists some positive real number $\epsilon$ (Here number is assumed to be real technically we could just pick some element of a field I suppose) such that for all real numbers $\delta,  |x-a|<\delta$ and $(|f(x)-f(a)|\geq\epsilon$
+  \end{itemize}
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sect{Problem 5}
+\begin{proof}
+  \begin{itemize}[label={--}]
+    \item(a) 2.10.8\textbf{+++}\\\\
+    If x is a rational number and x $\neq$ 0, then tan(x) is not a rational number:
+    \[
+      (x\in \mathbb{Q}\land x\neq 0)\rightarrow (tan(x)\notin \mathbb(Q))
+    \]
+    The negation:
+    \[
+      (x\in \mathbb{Q}\land x\neq 0) \land (tan(x) \in \mathbb{Q})
+    \]
+    For this problem i deployed the negatio of the conditional statement to find my answer. I am confident in this result!
+    \item(b) 2.10.10 \textbf{+++}\\\\
+    If f is a polynomial and its degree is greater than 2 then $f^'$ is not constatnt.
+    \[
+      (f \in \mathcal{P}_n\land n>2)\rightarrow f^{'}\text{ is not constant}
+    \]
+    The negation:
+    \[
+      (f \in \mathcal{P}_n\land n>2)\land f^{'}\text{ is  constant}
+    \]
+    This was a good problem that made me consider how to represent the set of polynomial over a certain degree. I chose the notation above from referencing a math stack overflow post. I find it to be an intuitive way of describing the set as there is a handy subscript at all times that denotes the degree of the polynomial family being sampled.
+  \end{itemize}
+
+
+\end{proof}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
