@@ -1,0 +1,186 @@
+\documentclass[12pt]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\pagestyle{empty}
+\author{Chris Camano: ccamano@sfsu.edu}
+\title{MATH 301 Homework 5 }
+\date{2/24/2022}
+
+\topmargin -0.6in
+\headsep 0.40in
+\oddsidemargin 0.0in
+\textheight 9.0in
+\textwidth 6.5in
+
+\newcommand{\econst}{\mathrm{e}}
+\newcommand{\diff}{\mathrm{d}}
+\newcommand{\dwrt}[1]{\frac{\diff}{\diff #1}}
+%%%%%%Macros for 425%%%%%%%%%
+\newcommand{\q}{\quad}
+\newcommand{\tab}{\\\\}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand{\sect}[1]{\section*{#1}}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\rtwo}{\mathbb{R}^2}
+\newcommand{\mxn}{{mxn}}
+
+\newcommand{\Axb}{\textbf{Ax=b} }
+\newcommand{\Axz}{\textbf{Ax=0} }
+\newcommand{\dim}{\text{dim}}
+\newcommand{\lc}{linear combination }
+\newcommand{\let}{\text{Let }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\everymath={\displaystyle}
+
+
+\begin{document}
+\maketitle
+\sect{Problem 4-4}+++
+\begin{proof}
+  Use the method of direct proof to prove the following statment:\tab
+  Suppose x,y $\in \Z$. If x and y are odd then xy is odd.\tab
+  \textbf{Proof:}\\
+  Suppose x,y are odd therefore:
+  \[
+    x=(2k+1),y=(2m+1)
+  \]
+  $$k,m\in \Z$$
+  \begin{align*}
+      &x(y)=(2k+1)(2m+1)\tab
+      &x(y)=4km+2k+2m+1\tab
+      &x(y)=2(2km+k+m)+1\tab
+      &k,m\in \Z \therefore (2km+k+m) \in \Z\tab
+      &\text{Let }(2km+k+m)=n,n\in \Z \therefore x(y)=2n+1\\
+      &\therefore x(y) \text{is odd}\\
+  \end{align*}}
+  This problem investigated the effect of multiplying two odd numbers together. I feel really confident with my work here, and fully understand the problem.
+\end{proof}\tab
+
+\sect{Problem 4-6}+++
+\begin{proof}
+  Use the method of direct proof to prove the following statment:\tab
+  Suppose a,b,c $\in \Z$. If $a|b$ and $a|c$ then $a|(b+c)$\tab
+  \textbf{Proof:}\\
+  \begin{align*}
+    \text{Suppose } a|b \text{ and } a|c \therefore\\
+     b=a(m),m\in Z \quad c=a(n),n\in \Z\\
+  \end{align*}
+  If $a|(b+c)$ then we must show that $(b+c)= a(k), k \in \Z$\\
+  If $ b=a(m),m\in Z \quad$and $ c=a(n),n\in \Z$ then
+  \begin{align*}
+    (b+c)=a(m)+a(n)=a(m+n)\\
+    \text{Let }m+n= k \therefore\\
+     (b+c)=a(k)
+  \end{align*}
+  Since b+c can be expressed as a multiple of a when $a|b$ and $a|c$ ,it is proved that $a|(b+c)$.\\
+  This problem was my first exploring the concepts of division. I feel that I took a few notational liberties with my work, but that my take on this proof was largely justified. The bulk of this work went into demonstrating that b+c can be expressed as a multiple of a.
+\end{proof}\tab
+
+\sect{Problem 4-14}+++
+\begin{proof}
+  Use the method of direct proof to prove the following statment:\tab
+  If n$\in \Z$ then $5n^2+3n+7$ is odd (try cases)\tab
+  For this problem we must test both parities of n: odd and even.\\
+  \textbf{Proof: n is odd}
+  \[
+    \text{Suppose }n=2k+1, k \in \Z
+  \]
+  Then the statement $5n^2+3n+7$ can be expressed as:
+  \[
+    5(2k+1)^2+3(2k+1))+7
+  \]
+  \begin{align*}
+      &5(2k+1)^2+3(2k+1))+7= 5(4k^2+4k+1)+6k+10\\
+      &\qquad\qquad\qquad\qquad\qquad\qquad =20k^2+26k+10+1\\
+      &\qquad\qquad\qquad\qquad\qquad\qquad =2(10k^2+13k+5)+1\\
+      &\qquad\qquad\qquad\qquad\qquad\qquad \qquad k \in \Z \therefore (10k^2+13k+5)\in \Z\\
+      &\qquad\qquad\qquad\qquad\qquad\qquad\qquad    \text{let } (10k^2+13k+5)=m\quad \therefore\\
+      &\qquad\qquad\qquad\qquad\qquad\qquad =\textbf{2(m)+1}\therefore\\
+      &\textbf{When n is odd $5(n)^2+3(n)+7$ is odd }
+  \end{align*}
+  \textbf{Proof: n is even}
+  \[
+    \text{ Suppose }n=2k, k \in \Z
+  \]
+  Then the statement $5n^2+3n+7$ can be expressed as:
+  \[
+      5(2k)^2+3(2k)+7
+  \]
+  \begin{align*}
+    &5(2k)^2+3(2k)+7=5(4k^2)+6k+7\\
+    &\qquad\qquad\qquad\qquad=10k^2+6k+6+1\\
+    &\qquad\qquad\qquad\qquad=2(5k^2+3k+3)+1\\
+    &\qquad\qquad\qquad\qquad k\in \Z \therfore (5k^2+3k+3) \in \Z\\
+    &\qquad\qquad\qquad\qquad\text{let }(5k^2+3k+3)=m\\
+    &\qquad\qquad\qquad\qquad=2(m)+1\therefore\\
+    &\textbf{When n is even $5(n)^2+3(n)+7$ is odd }
+  \end{align*}
+  Therfore regardless of the parity of n $(5(n)^2+3(n)+7)$ is odd
+  \\
+  This question was difficult for me becuase it pushed me to consider all cases presented for the problem. Luckily the structure of the proof was very symmetric and I am confident in my work.
+\end{proof}\tab
+
+\sect{Problem 5-2}+++
+\begin{proof}
+  Prove the following statments with contrpositive proof.(In each case, think about how a direct proof would work. In most cases contrpositive is easier)\tab
+  Suppose $n\in \Z$. If $n^2$ is even then n is even\\
+  \textbf{Proof:}\\
+  Suppose n is odd. Then:
+  \[
+    n=2k+1, k\in \Z
+  \]
+  We now wish to prove that if n is odd $n^2$ is odd.
+  \begin{align*}
+      &(2k+1)^2=4k^2+4k+1\\
+      &\qquad\qquad = 2(2k^2+2k)+1\\
+      &\qquad\qquad k \in \Z \therefore (2k^2+2k)\in \Z\\
+      &\qquad\qquad\text{let }2k^2+2k=m\therefore\\
+      &\qquad\qquad(2k+1)^2=2(m)+1
+  \end{align*}
+Meaning that when n is odd $n^2$ is odd. Through logical equivilancy this implies that when $n^2$ is even n is even.
+\\
+This problem was a good introduction to the contrapositive proof method I am very confident with my result. It seems to me that the problem was made to investigate this new technique!
+\end{proof}\tab\tab
+
+\sect{Problem 5-16}+++
+\begin{proof}
+  Prove the following statements using either direct or contrapositive proof. \tab
+  Suppose x,y$\in \Z$ If x+y is even, then x and y have the same parity.\\
+  Suppose that  x and y do not have the same parity. This is to say that:
+  \[
+    x=2k \quad y=2m+1 \quad k,m\in \Z
+  \]
+  or
+  \[
+    x=2m+1 \quad y=2k \quad k,m\in \Z
+  \]
+  \textbf{Proof: x is even y is odd}:
+  Suppose $x=2k \quad y=2m+1 \quad k,m\in \Z$:
+  \begin{align*}
+    &x+y=2k+2m+1\\
+    &x+y=2(k+m)+1\\
+    &k,m \in \Z \therefore k+m \in \Z\\
+    & \text{Let } n=k+m \therfore:\\
+    &x+y=2(n)+1
+  \end{align*}
+  Consequently x+y is odd . \\
+  Therfore x+y is not even.\\
+  \textbf{Proof: y is even x is odd}:
+  Suppose $y=2k \quad x=2m+1 \quad k,m\in \Z$:
+  \begin{align*}
+    &y+x=2k+2m+1\\
+    &y+x=2(k+m)+1\\
+    &k,m \in \Z \therefore k+m \in \Z\\
+    & \text{Let } n=k+m \therfore:\\
+    &y+x=2(n)+1
+  \end{align*}
+  Consequently x+y is odd . \\
+  Therfore x+y is not even.\\
+  Since the negation of the original statment created two sub problems this problem had to be solved through cases and reminded of two previously solved in this assignment. I am confident in my answer.
+\end{proof}\tab\tab
+\end{document}
