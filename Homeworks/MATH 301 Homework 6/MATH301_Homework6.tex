@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\pagestyle{empty}
+\author{Chris Camano: ccamano@sfsu.edu}
+\title{MATH 301 Homework 6 }
+\date{3/8/2022}
+
+\topmargin -0.6in
+\headsep 0.40in
+\oddsidemargin 0.0in
+\textheight 9.0in
+\textwidth 6.5in
+
+\newcommand{\econst}{\mathrm{e}}
+\newcommand{\diff}{\mathrm{d}}
+\newcommand{\dwrt}[1]{\frac{\diff}{\diff #1}}
+%%%%%%Macros for 425%%%%%%%%%
+\newcommand{\q}{\quad}
+\newcommand{\tab}{\\\\}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand{\sect}[1]{\section*{#1}}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\rtwo}{\mathbb{R}^2}
+\newcommand{\mxn}{{mxn}}
+
+\newcommand{\Axb}{\textbf{Ax=b} }
+\newcommand{\Axz}{\textbf{Ax=0} }
+\newcommand{\dim}{\text{dim}}
+\newcommand{\lc}{linear combination }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\everymath={\displaystyle}
+
+
+\begin{document}
+\maketitle
+
+\sect{Problem 5.6}
+\begin{proof}
+  Suppose $x \in \R$ If $x^3-x >0$ then $x >-1$\\
+  \textbf{Proof by contraposition+++}\\
+  Suppose  $x\leq -1,$ This means that (x \leq 0), (x+1) $\leq 0$ and x-1 $\leq 0 $This is to say
+  \[
+    x-1<x<x+1\leq 0
+  \]
+  The expression $x^3-x$ is the product of these terms:
+  \[
+    x^3-x=x(x+1)(x-1)
+  \]
+  Three numbers less than or equal to zero will be less than or equal to zero when you take their product:
+  \[
+    x(x+1)(x-1) \leq 0 \quad \therefore x^3-x \leq 0
+  \]\\\\
+  This problem makes intuitive sense to me and I found that through exploring the algebraic expansion of the term the underlying truth of the statement became self evident
+\end{proof}\\
+
+\sect{Problem 5.10}
+\begin{proof}
+  Suppose x,y,z $\in \Z$ and x $\neq $ 0 If $x \nmid yz $ then $ x\nmid y $and  $x\nmid z$\\
+  \textbf{Proof by contraposition+++}\\
+  Suppose  $ x\mid y $ or  $x\mid z$\\
+  \begin{align*}
+    & x \mid y \therefore y=xk, \quad k \in \Z\\
+    & x \mid z \therefore z=xl, \quad l \in \Z\\
+    & yz=(xl)(xk)=x(kl)\therefore \\
+    & x \mid yz
+  \end{align*}
+\end{proof}\\
+
+\sect{Problem 5.28}
+\begin{proof}
+  If n $\in \Z$, then $4 \nmid (n^2-3)$\\
+
+  \textbf{Proof by contraposition +++}\\
+  Suppose that $4 \mid (n^2-3)$, this is to say that $(n^2-3)$=4c for some c $\in \Z$\\
+  There are two possible parities for an integer even or odd.
+  When n is even n =2k for some $k\in \Z$ meaning that:
+  \[
+    (2k)^2-3=4c
+  \]
+  \[
+  4k^2-3=4c
+  \]
+  \[
+    k^2-c=\frac{3}{4}
+  \]
+  \[
+    k^2=\frac{3}{4}-c
+  \]
+  If this is the case then k cannot be an integer as the the result of $\frac{3}{4}-c$ is rational since $\nexists c \in \Z$ such that $\frac{3}{4}-c$ produces an integer.
+  \\
+  When  n is odd n =2m+1, $m \in \Z$ this is to say that
+  \begin{align*}
+    & (2m+1)^2-3=4c\\
+    & 4m^2+4m+1-3=4c\\
+    & 4(m^2+m)-2=4c\\
+    & m^2+m -\frac{1}{2}=c
+  \end{align*}
+  This implies that c is not an integer meaning that regardless of the parity of n we observe that in order for 4 to divide $n^2-3$ we would need a non integer multiple of 4  ( $\neg P$). By contraposition this implies that if n is an integer then 4 does not divide $n^2-3$
+\end{proof}\\\\
+This proof was robust and I feel that there may be a more efficient route to solving it. That being said I am very satisified with my solution and feel that I have covered my bases in my logic when testing the two cases nescessary fot the contrapositive proof. This is one of the first examples in the class where we use multiple proof techniques to accomplish our goals.
+\sect{Problem 6.12}
+\begin{proof}
+ For every positive $x \in \mathbb{Q}$ there is a postive $ y \in \mathbb{Q}$ for which $y<x$\\
+ \textbf{Proof by contradiction+++}\\
+ Assume that for every positive $x \in \mathbb{Q}$ there does not exist a positive y $\in \mathbb{Q}$ for which $y<x$.\\
+ If this were true then for all $x \in \mathbb{Q}$ of the form $\frac{p}{q}$ there does not exist any other rational number y between 0 and x such that $y<x$ . This statement is nonsensical as we can always increment the denominator of a given  rational number to describe a small number rational number. In symbols:
+ \[
+    \forall x \in \mathbb{Q}\quad x = \frac{p}{q} \quad \exists y \in \mathbb{Q} : y= \frac{p}{q+1}
+ \]
+ Therefore we see that all rational numbers have smaller rational number between themselves and zero, which contradicts the notion that there does not exist a positive y $\in \mathbb{Q}$ for which $y<x$.\\\\
+ In this proof I assume the opposite of the statement is true and indicate that we arrive at a contradiction when doing so. I really like the feel of this proof as it is very intuitive to think about and can be reduced down to chasing the best way to tangibley show that something is false.
+\end{proof}\\
+
+\sect{Problem 6.24}
+\begin{proof}
+  \textbf{Proof by contradiction+++}
+ The number $log_23$ is irrational.
+ Suppose that $log_23$ is rational then there exist some p and q such that:
+ \[
+   log_23=\frac{p}{q}
+ \]
+ \[
+   2^{\frac{p}{q}}=3
+ \]
+ \[
+   2^{p}=3^q
+ \]
+ Here we see that we are suggesting that an odd number raised so some power q could be equal to an even number raised to some power p. Meaning that the original statement must be true as accepting the opposite leads to contradiction.\\\\
+ I am very confident with this result and have support through my understanding of the algebraic manipulations preformed here.
+\end{proof}\\
+\end{document}
