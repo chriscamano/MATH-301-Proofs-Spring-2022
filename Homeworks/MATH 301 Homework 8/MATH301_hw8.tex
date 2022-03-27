@@ -1,0 +1,141 @@
+\documentclass[12pt]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage[final]{pdfpages}
+
+
+\usepackage{amssymb}
+\pagestyle{empty}
+\author{Chris Camano: ccamano@sfsu.edu}
+\title{MATH 301  Homework 8 }
+\date{3/25/2022}
+
+\topmargin -0.6in
+\headsep 0.40in
+\oddsidemargin 0.0in
+\textheight 9.0in
+\textwidth 6.5in
+
+\newcommand{\econst}{\mathrm{e}}
+\newcommand{\diff}{\mathrm{d}}
+\newcommand{\dwrt}[1]{\frac{\diff}{\diff #1}}
+%%%%%%Macros for 425%%%%%%%%%%%%%%%%%%%
+\newcommand{\q}{\quad}
+\newcommand{\tab}{\\\\}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand{\sect}[1]{\section*{#1}}
+
+%%%%%%Vector Spaces%%%%%%%%%%%%%%%%%%%
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\rtwo}{\mathbb{R}^2}
+\newcommand{\mxn}{{mxn}}
+
+%%%%%%Sets and common phrases%%%%%%%%%
+\newcommand{\Axb}{\textbf{Ax=b} }
+\newcommand{\Axz}{\textbf{Ax=0} }
+\newcommand{\dim}{\text{dim}}
+\newcommand{\lc}{linear combination }
+\newcommand{\let}{\text{Let }}
+\newcommand{\tf}{\therefore}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\everymath={\displaystyle}
+
+
+\begin{document}
+\maketitle
+\begin{center}
+  \textbf{Chapter 7) 4,6,8,12,16,20}\\
+\end{center}
+
+
+
+\sect{7.4}
+\begin{proof}
+  Given an integer a, then $a^3+4a+5$ is odd if and only if a is even.\\
+  \textbf{If and only if proof}\\
+  \textbf{ $a^3+4a+5$ is odd $\rightarrow$ a is even}\\
+  \textbf{Contrapositive proof: }
+  \textbf{ if a is odd $\rightarrow a^3+4a+5$ is even  }\\
+  \begin{align*}
+    &\text{Let }a=2k+1, k\in \Z \therefore\\
+    &a^3+4a+5=(2k+1)^2+4(2k+1)+5=\\
+    &4k^2+4k+1+8k+4+5=\\
+    &4k^2+12k+10=\\
+    &2(2k^2+6k+5)
+  \end{align*}
+  Thus it can be shown that when a is an odd number the experession $a^3+4a+5$ can be expressed as 2 times some integer of the form: $2k^2+6k+5, k \in \Z$\\
+  \textbf{ a is even $\rightarrow$  $a^3+4a+5$ is odd }
+  \begin{align*}
+    &\text{Let }a =2k, k \in \Z \therefore\\
+    &a^3+4a+5=(2k)^3+4(2k)+5=\\
+    &8k^3+8k+5=\\
+    &8k^3+8k+4+1=\\
+    &2(4k^3+4k+2)+1\\
+    &\text{Let }m=4k^3+4k+2\\
+    &a^3+4a+5=2m+1
+  \end{align*}
+  Meaning when a is even $a^3+4a+5$ is odd
+\end{proof}\\
+\sect{7.6}
+\begin{proof}
+  Suppose x,y $\in \R$ Then $x^3+x^2y=y^2+xy$ if and only if $y=x^2$ or y=-x\\
+  \textbf{If and only if proof}\\
+  \textbf{If $x^3+x^2y=y^2+xy \rightarrow$ $\quad y=x^2$ or $y=-x$ }\\
+  \textbf{Direct Proof:}\\
+  \begin{align*}
+    &x^3+x^2y=y^2+xy\\
+    &x^2(x+y)=y(x+y)\\
+    &x^2(x+y)-y(x+y)=0\\
+    &(x^2-y)(x+y)=0\\
+    &\therefore y=-x \lor y=x^2
+  \end{align*}
+  \textbf{If $y=x^2$ or $y=-x \rightarrow$ $\quad x^3+x^2y=y^2+xy$ }\\
+  \textbf{Direct Proof:}\\
+  \begin{align*}
+    &\text{Let } y=x^2\therefore \\
+    &x^3+x^2y= x^3+x^4\\
+    &y^2+xy=(x^2)^2+xx^2=x^3+x^4\\
+    &\therefore x^3+x^2y=y^2+xy
+  \end{align*}
+\end{proof}\\
+
+\sect{7.8}
+\begin{proof}
+  Suppose a,b $\in \Z$ Prove that $a \equiv b (mod 10)$ if and only if $a \equiv b (mod 2)$ and $a \equiv b (mod 5)$
+\end{proof}\\
+\sect{7.12}
+\begin{proof}
+ There exists a positive real number x for which $x^2<\sqrt{x}$
+ \textbf{Existential proof}:
+ Consider the number $\frac{1}{2}$
+  \[
+    \Big(\frac{1}{2}\Big)^2< \sqrt{\frac{1}{2}}
+  \]
+  \[
+    .25<.707107...
+  \]
+ \end{proof}\\
+\sect{7.16}
+\begin{proof}
+
+\end{proof}\\
+\sect{7.20}
+\begin{proof}
+There exists an $n \in \mathbb{N}$ for which $11|(2^n-1)$\\
+\textbf{Existential proof}:
+
+\begin{figure}[h]
+  \caption{Consider the numbers of the form 10k, $k \in \mathbb{W}$(whole numbers )
+  these are solutions to this problem, for example 10,20,30 are solutions.
+  Answers generated using c++ computation with the following code:}
+ \includegraphics[,width=\textwidth]{Capture.png}
+\end{figure}
+
+\[
+  2^40-1=1099511627776 \quad \frac{1099511627776}{11}=99955602525
+\]
+
+\end{proof}\\
+\end{document}
