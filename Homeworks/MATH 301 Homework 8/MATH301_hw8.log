@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.21)  25 MAR 2022 21:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.21)  28 MAR 2022 20:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -174,28 +174,28 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 
-./MATH301_hw8.tex:38: LaTeX Error: Command \dim already defined.
+./MATH301_hw8.tex:39: LaTeX Error: Command \dim already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38 \newcommand{\dim}{\text{dim}}
+l.39 \newcommand{\dim}{\text{dim}}
                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./MATH301_hw8.tex:40: LaTeX Error: Command \let already defined.
+./MATH301_hw8.tex:41: LaTeX Error: Command \let already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.40 \newcommand{\let}{\text{Let }}
+l.41 \newcommand{\let}{\text{Let }}
                                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -209,20 +209,20 @@ File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 (./MATH301_hw8.aux)
 \openout1 = `MATH301_hw8.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -257,300 +257,235 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
 
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
 
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-./MATH301_hw8.tex:55: LaTeX Error: Environment proof undefined.
+./MATH301_hw8.tex:56: LaTeX Error: Environment proof undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.55 \begin{proof}
+l.56 \begin{proof}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--61
+Underfull \hbox (badness 10000) in paragraph at lines 57--62
 
  []
 
-./MATH301_hw8.tex:67: Undefined control sequence.
-<argument>  &\text {Let }a=2k+1, k\in \Z 
-                                         \therefore \\ &a^3+4a+5=(2k+1)^2+4(...
-l.67   \end{align*}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-./MATH301_hw8.tex:67: Undefined control sequence.
-<argument>  &\text {Let }a=2k+1, k\in \Z 
-                                         \therefore \\ &a^3+4a+5=(2k+1)^2+4(...
-l.67   \end{align*}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./MATH301_hw8.tex:68: Undefined control sequence.
-l.68 ... integer of the form: $2k^2+6k+5, k \in \Z
-                                                  $\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./MATH301_hw8.tex:78: Undefined control sequence.
-<argument>  &\text {Let }a =2k, k \in \Z 
-                                         \therefore \\ &a^3+4a+5=(2k)^3+4(2k...
-l.78   \end{align*}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./MATH301_hw8.tex:78: Undefined control sequence.
-<argument>  &\text {Let }a =2k, k \in \Z 
-                                         \therefore \\ &a^3+4a+5=(2k)^3+4(2k...
-l.78   \end{align*}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./MATH301_hw8.tex:80: LaTeX Error: \begin{document} ended by \end{proof}.
+./MATH301_hw8.tex:81: LaTeX Error: \begin{document} ended by \end{proof}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.80 \end{proof}
+l.81 \end{proof}
                 \\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
+Underfull \hbox (badness 10000) in paragraph at lines 79--82
 
  []
 
 
-./MATH301_hw8.tex:82: LaTeX Error: Environment proof undefined.
+./MATH301_hw8.tex:83: LaTeX Error: Environment proof undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \begin{proof}
+l.83 \begin{proof}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--87
+Underfull \hbox (badness 10000) in paragraph at lines 84--88
 
  []
 
 [1
 
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
 
-./MATH301_hw8.tex:102: LaTeX Error: \begin{document} ended by \end{proof}.
+./MATH301_hw8.tex:103: LaTeX Error: \begin{document} ended by \end{proof}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.102 \end{proof}
+l.103 \end{proof}
                  \\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
 
-./MATH301_hw8.tex:105: LaTeX Error: Environment proof undefined.
+./MATH301_hw8.tex:106: LaTeX Error: Environment proof undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.105 \begin{proof}
+l.106 \begin{proof}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./MATH301_hw8.tex:106: Undefined control sequence.
-l.106   Suppose a,b $\in \Z
-                           $ Prove that $a \equiv b (mod 10)$ if and only if...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-
-./MATH301_hw8.tex:107: LaTeX Error: \begin{document} ended by \end{proof}.
+./MATH301_hw8.tex:108: LaTeX Error: \begin{document} ended by \end{proof}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 \end{proof}
+l.108 \end{proof}
                  \\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--108
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
 
-./MATH301_hw8.tex:109: LaTeX Error: Environment proof undefined.
+./MATH301_hw8.tex:110: LaTeX Error: Environment proof undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.109 \begin{proof}
+l.110 \begin{proof}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./MATH301_hw8.tex:119: LaTeX Error: \begin{document} ended by \end{proof}.
+./MATH301_hw8.tex:120: LaTeX Error: \begin{document} ended by \end{proof}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.119  \end{proof}
+l.120  \end{proof}
                   \\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--120
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
 
 
-./MATH301_hw8.tex:121: LaTeX Error: Environment proof undefined.
+./MATH301_hw8.tex:122: LaTeX Error: Environment proof undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 \begin{proof}
+l.122 \begin{proof}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./MATH301_hw8.tex:123: LaTeX Error: \begin{document} ended by \end{proof}.
+Underfull \hbox (badness 10000) in paragraph at lines 123--126
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.123 \end{proof}
-                 \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
-
-./MATH301_hw8.tex:124: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.124 \sect
-           {7.20}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./MATH301_hw8.tex:125: LaTeX Error: Environment proof undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.125 \begin{proof}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<Capture.png, id=13, 465.53925pt x 98.769pt>
-File: Capture.png Graphic file (type png)
-<use Capture.png>
-Package pdftex.def Info: Capture.png  used on input line 133.
-(pdftex.def)             Requested size: 469.75499pt x 99.66394pt.
 [2]
 
-./MATH301_hw8.tex:140: LaTeX Error: \begin{document} ended by \end{proof}.
+./MATH301_hw8.tex:141: LaTeX Error: \begin{document} ended by \end{proof}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 \end{proof}
+l.141 \end{proof}
                  \\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./MATH301_hw8.tex:141: LaTeX Error: There's no line here to end.
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+
+ []
+
+
+./MATH301_hw8.tex:143: LaTeX Error: Environment proof undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 \end
+l.143 \begin{proof}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<Capture.png, id=18, 465.53925pt x 98.769pt>
+File: Capture.png Graphic file (type png)
+<use Capture.png>
+Package pdftex.def Info: Capture.png  used on input line 151.
+(pdftex.def)             Requested size: 469.75499pt x 99.66394pt.
+
+./MATH301_hw8.tex:158: LaTeX Error: \begin{document} ended by \end{proof}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 \end{proof}
+                 \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./MATH301_hw8.tex:159: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.159 \end
           {document}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -558,11 +493,11 @@ or  <return>  to continue without it.
 
 [3 <./Capture.PNG>] (./MATH301_hw8.aux) ) 
 Here is how much of TeX's memory you used:
- 3734 strings out of 478542
- 50648 string characters out of 5854402
- 359384 words of memory out of 5000000
- 21637 multiletter control sequences out of 15000+600000
- 411886 words of font info for 60 fonts, out of 8000000 for 9000
+ 3738 strings out of 478542
+ 50686 string characters out of 5854402
+ 359390 words of memory out of 5000000
+ 21639 multiletter control sequences out of 15000+600000
+ 412507 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,10n,75p,354b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2021/texmf-dist/fonts/type
@@ -575,7 +510,7 @@ xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb>
-Output written on MATH301_hw8.pdf (3 pages, 110313 bytes).
+Output written on MATH301_hw8.pdf (3 pages, 111799 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream

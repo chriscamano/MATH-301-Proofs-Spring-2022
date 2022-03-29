@@ -29,6 +29,7 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\F}{\mathbb{F}}
+\newcommand{\Z}{\mathbb{Z}}
 \newcommand{\rtwo}{\mathbb{R}^2}
 \newcommand{\mxn}{{mxn}}
 
@@ -107,7 +108,7 @@
 \end{proof}\\
 \sect{7.12}
 \begin{proof}
- There exists a positive real number x for which $x^2<\sqrt{x}$
+ There exists a positive real number x for which $x^2<\sqrt{x}$\\
  \textbf{Existential proof}:
  Consider the number $\frac{1}{2}$
   \[
@@ -119,7 +120,24 @@
  \end{proof}\\
 \sect{7.16}
 \begin{proof}
-
+  Suppose $a,b, \in \Z$. If ab is odd then $a^2+b^2$ is even.\\
+  \textbf{Direct Proof}\\
+    If ab is odd then a and b are both odd as there does not exist two even numbers with an odd product or an odd an even number that have an odd product.Proof below: \\
+    \[
+      \textbf{Let }a=2k+1,k\in \Z \quad b=2m+1, m\in \Z
+    \]
+    \begin{align*}
+      &(2k+1)(2m+1)=\\
+      &4km+2m+2k+1=\\
+      &2(2km+m+k)+1
+    \end{align*}
+  Therefore the product of two odd numbers is odd.
+    \begin{align*}
+      &a^2+b^2=(2k+1)^2+(2m+1)^2=\\
+      &4k^2+4k+1+4m^2+4m+1=\\
+      &2(2k^2+2k+2m^2+2m+1)
+    \end{align*}
+    $a^2+b^2$ can be expressed as 2 times some integer therefore it is even.
 \end{proof}\\
 \sect{7.20}
 \begin{proof}
@@ -134,7 +152,7 @@ There exists an $n \in \mathbb{N}$ for which $11|(2^n-1)$\\
 \end{figure}
 
 \[
-  2^40-1=1099511627776 \quad \frac{1099511627776}{11}=99955602525
+  2^{40}-1=1099511627776 \quad \frac{1099511627776}{11}=99955602525
 \]
 
 \end{proof}\\
