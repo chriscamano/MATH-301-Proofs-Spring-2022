@@ -54,6 +54,7 @@
 
 \sect{7.4}
 \begin{proof}
+  +++\\
   Given an integer a, then $a^3+4a+5$ is odd if and only if a is even.\\
   \textbf{If and only if proof}\\
   \textbf{ $a^3+4a+5$ is odd $\rightarrow$ a is even}\\
@@ -77,10 +78,12 @@
     &\text{Let }m=4k^3+4k+2\\
     &a^3+4a+5=2m+1
   \end{align*}
-  Meaning when a is even $a^3+4a+5$ is odd
+  Meaning when a is even $a^3+4a+5$ is odd.\\
+  I found this poof to be realy intuitive, this felt like a good first problem that was an extention of the direct proofs for conditionals we were doing in previous chapters
 \end{proof}\\
 \sect{7.6}
 \begin{proof}
+  +++\\
   Suppose x,y $\in \R$ Then $x^3+x^2y=y^2+xy$ if and only if $y=x^2$ or y=-x\\
   \textbf{If and only if proof}\\
   \textbf{If $x^3+x^2y=y^2+xy \rightarrow$ $\quad y=x^2$ or $y=-x$ }\\
@@ -100,14 +103,42 @@
     &y^2+xy=(x^2)^2+xx^2=x^3+x^4\\
     &\therefore x^3+x^2y=y^2+xy
   \end{align*}
+This proof was very fun becuase it got very algebraic compared to some of the other problems in this set. I really enjoyed how for the second direct proof I could prove both sides of the equation once I understood the substitution.
 \end{proof}\\
 
 \sect{7.8}
 \begin{proof}
-  Suppose a,b $\in \Z$ Prove that $a \equiv b (mod 10)$ if and only if $a \equiv b (mod 2)$ and $a \equiv b (mod 5)$
+  +++\\
+  Suppose a,b $\in \Z$ Prove that $a \equiv b(\mod 10)$ if and only if $a \equiv b(\mod 2)$ and $a \equiv b(mod 5)$\\\\
+  \textbf{If $a \equiv b(\mod 10)\rightarrow $$a \equiv b(\mod 2)$ and $a \equiv b(\mod 5)$ }\\
+  If $a \equiv b(\mod 10)$ then $10|(a-b)$. This is to say that the a - b is some multiple of 10 in math:
+  \[
+    a-b=10k, k \in \Z
+  \]
+  \begin{align*}
+    &a-b=5(2m),m \in \Z\therefore\\
+    & a-b =5(n), n=2m \in \Z \therefore\\
+    &a \equiv b \mod 5
+  \end{align*}
+  \text{Likewise: }
+  \begin{align*}
+    &a-b=2(5l), l \in \Z\therefore\\
+    &a-b=2(p), p=5l \in \Z \therefore\\
+    &a \equiv b \mod 2 \\
+    &\blacksquare
+  \end{align*}
+  \\
+  \textbf{If $a \equiv b(\mod 2)$ and $a \equiv b(\mod 5)\rightarrow$$a \equiv b(\mod 10)$}
+  If $a \equiv b mod 2$ and $a \equiv b mod 5$ then:
+  \[
+    2|a-b \quad \land \quad 5|a-b
+  \]
+  If two numbers divide an integer this implies that their product does as well. Therefore $10|a-b, a \equiv b \mod 10$  \blacksquare\\
+  This was the first problem I have ever worked on involving the modulo operator and considering the notion of congrunecy. I researched how to frame this problem and it soon became apparent how to solve using the definition of congrunecy.
 \end{proof}\\
 \sect{7.12}
 \begin{proof}
+  +++\\
  There exists a positive real number x for which $x^2<\sqrt{x}$\\
  \textbf{Existential proof}:
  Consider the number $\frac{1}{2}$
@@ -118,8 +149,10 @@
     .25<.707107...
   \]
  \end{proof}\\
+ This proof was very straight forward and I was able to provide an example after considering a few numbers and the byproduct of calculating their square root.
 \sect{7.16}
 \begin{proof}
+  +++\\
   Suppose $a,b, \in \Z$. If ab is odd then $a^2+b^2$ is even.\\
   \textbf{Direct Proof}\\
     If ab is odd then a and b are both odd as there does not exist two even numbers with an odd product or an odd an even number that have an odd product.Proof below: \\
@@ -139,21 +172,23 @@
     \end{align*}
     $a^2+b^2$ can be expressed as 2 times some integer therefore it is even.
 \end{proof}\\
+This problem felt slightly out of place for me since it seemed solvable using a direct proof method. Please let me know if I was supposed to solve this differently.
 \sect{7.20}
 \begin{proof}
-There exists an $n \in \mathbb{N}$ for which $11|(2^n-1)$\\
-\textbf{Existential proof}:
+  +++\\
+  There exists an $n \in \mathbb{N}$ for which $11|(2^n-1)$\\
+  \textbf{Existential proof}:
 
-\begin{figure}[h]
-  \caption{Consider the numbers of the form 10k, $k \in \mathbb{W}$(whole numbers )
-  these are solutions to this problem, for example 10,20,30 are solutions.
-  Answers generated using c++ computation with the following code:}
- \includegraphics[,width=\textwidth]{Capture.png}
-\end{figure}
+  \begin{figure}[h]
+    \caption{Consider the numbers of the form 10k, $k \in \mathbb{W}$(whole numbers )
+    these are solutions to this problem, for example 10,20,30 are solutions.
+    Answers generated using c++ computation with the following code:}
+   \includegraphics[,width=\textwidth]{Capture.png}
+  \end{figure}
 
-\[
-  2^{40}-1=1099511627776 \quad \frac{1099511627776}{11}=99955602525
-\]
-
+  \[
+    2^{40}-1=1099511627776 \quad \frac{1099511627776}{11}=99955602525
+  \]
+ This was a fun problem because many of the exestential proofs can be verified computationally. Attached is my code.
 \end{proof}\\
 \end{document}

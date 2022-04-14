@@ -1,0 +1,159 @@
+\documentclass[12pt]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\pagestyle{empty}
+\author{Chris Camano: ccamano@sfsu.edu}
+\title{MATH 301  Homework 9 }
+\date{4/4/2022}
+
+\topmargin -0.6in
+\headsep 0.40in
+\oddsidemargin 0.0in
+\textheight 9.0in
+\textwidth 6.5in
+
+\newcommand{\econst}{\mathrm{e}}
+\newcommand{\diff}{\mathrm{d}}
+\newcommand{\dwrt}[1]{\frac{\diff}{\diff #1}}
+%%%%%%Macros for 425%%%%%%%%%%%%%%%%%%%
+\newcommand{\q}{\quad}
+\newcommand{\tab}{\\\\}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand{\sect}[1]{\section*{#1}}
+
+%%%%%%Vector Spaces%%%%%%%%%%%%%%%%%%%
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\rtwo}{\mathbb{R}^2}
+\newcommand{\mxn}{{mxn}}
+
+%%%%%%Sets and common phrases%%%%%%%%%
+\newcommand{\Axb}{\textbf{Ax=b} }
+\newcommand{\Axz}{\textbf{Ax=0} }
+\newcommand{\dim}{\text{dim}}
+\newcommand{\lc}{linear combination }
+\newcommand{\let}{\text{Let }}
+\newcommand{\tf}{\therefore}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\everymath={\displaystyle}
+
+
+\begin{document}
+\maketitle
+\begin{align*}
+  &\text{Selected Problem 1, Selected Problem 2, 8.4, 8.6, 8.14, 8.22, 8.26}
+\end{align*}
+\sect{Selected Problem 1} ++
+\begin{proof}
+  If n is a positive integer that is not prime.
+  \begin{itemize}
+    \item Prove that there exists  an integer m  such that $m|n$ and $2 \leq m \leq \sqrt{n}$\\
+    \textbf{Proof by example}:\\
+    Let m =3 and n =9\\
+    It can be seen that
+    \[
+      3|9
+    \]
+    and that
+    \[
+      2 \leq 3 \leq \sqrt{9}
+    \]
+    \[
+      2 \leq 3 \leq 3
+    \]
+    Thus it is proven that there exist a positive nonprime integer n and an integer m such that $m|n$ and $2 \leq m \leq \sqrt{n}$
+    \item Prove that there exists a prime number p such that $p|n$ and $2 \leq p \leq \sqrt{n}$\\\\ Let p =3, then by the proof above with n=9 the same is true and it is shown that there exists some prime p and nonprime positive integer m such that p$|$n and $2 \leq p \leq \sqrt{n}$
+  \end{itemize}
+For this problem I was not sure whether or not this was a universal statement or if a single example was enough to prove the statement. Other than that I was able to find an example with realtively small numbers that worked
+\end{proof}
+\sect{Selected Problem 2} +++
+\begin{proof}
+  Let a $<b$ be real numbers. Prove that there exists  a unique real number c such that c-a=b-c$>0$ \\
+  \begin{align*}
+    &c-a=b-c>0\\
+    &2c=b+a>0\\
+    &c=\frac{a+b}{2}>0\\
+    &\frac{a+b}{2}-a=b-\frac{a+b}{2}>0\\
+    &\frac{b-a}{2}=\frac{b-a}{2}>0
+  \end{align*}
+  If $b>a$ then $b-a>0$ therfore $\frac{b-a}{2}>0$\\
+  $\forall b>a \quad \frac{b-a}{2} >0$ as regardless of the parity of a the term will always be greater than zero. this is effectivley the center point between two given integer values and will be unique as it is dependent on the input integers a and b.\\\\
+  This was my favorite problem on the assignment and I really liked that we defined the concept of a midpoint during this proof. I am pretty confident in my answer but there could be room for some error.
+\end{proof}
+\sect{Problem 8.4}+++
+\begin{proof}
+  If m,n $\in \Z$ then $\{x \in \Z:mn|x\}\subseteq\{x\in \Z:m|x\}\cap \{x\in\Z:n|x\}$\\\\
+  Let$ A =\{x \in \Z:mn|x\} $ and $B=\{x\in \Z:m|x\}\cap \{x\in\Z:n|x\}$
+  and suppose $a\in A$ .\\
+  If $a\in A$ then $a=mn(k)\quad k\in \Z$\\
+  Rearranging coefficients a can be expressed as : $a=m(nk)$ meaning that a can be expressed as some multiple of m proving $m|a$. \\
+  Likewise : $a=n(mk)$ therefore $n|a$. It has then been show that $\forall m,n \in Z$ if $mn|a$ then $m|a$ and $n|a$. thus $a\in A$ implies $a\in B$ so it follows that $A\subseteq B$\\\\
+  For this proof I feel that it was a good intro to set proofs and started with proving that a set is a subset. I solved this by first choosing an example element and showing that the proof hold for all elements in the set.
+\end{proof}
+\sect{Problem 8.6}++
+\begin{proof}
+  Suppose A,B and C are sets. Prove that if $A \subseteq B$ then $A-C\subseteq B-C$\\\\
+   Assume $A\subseteq B$ and an element  y $\in A -C$\\
+   Since y is an element of A-C this means that $y \in A\quad \land y\notin C$\\A is a subset of B so all elements of the set A are contained within the set B. this implies that :
+   \[
+     y\in A\quad y\in B\quad  y \notin C
+   \]
+   This means that y$\in B-C$ Therefore  it is evident that $A-C\subseteq B-C$
+   \\\\
+   This proof feels a little unceratin to me because it is so short. I almost feel like there needs to be more support for the argument but I am not certain as I feel like what I have given is realtively sufficient.
+\end{proof}
+\sect{Problem 8.14}+++
+\begin{proof}
+  Prove that If A,B and C are sets, then $(A\cup B)-C=(A-C)\cup (B-C)$\\\\
+  \begin{itemize}
+    \item \textbf{Proof of $((A\cup B)-C)\subseteq  ((A-C)\cup (B-C))$}\\\\
+    Assume a $\in (A \cup B-C)$ then $((a \in A) \land (a \notin C))  \lor ((a \in B) \land (a \notin C)) $\\
+    If $((a \in A) \land (a \notin C))$ then a $\in A-C$,or\\
+    If $((a \in B) \land (a \notin C))$ then a $\in B-C$\\\\
+    So a can be an element of A-C or B-C\\
+    Thus it is shown that $((A\cup B)-C)$ is a subset of $  ((A-C)\cup (B-C))$
+    \item\textbf{Proof of $((A-C)\cup (B-C))\subseteq  (A\cup B)-C)$ }\\\\
+    Suppose $b\in ((A-C)\cup (B-C))$\\
+    Then $(b \in A-C) \lor (b\in B-C)$\\
+    If $(b \in A-C)$ then $(b \in A) \land (b \notin C)$, or\\
+    If $(b \in B-C)$ then $(b \in B) \land (b \notin C)$\\
+    Meaning the b can either be an element of A or B but not C.
+    Thus it is shown that b $\in ( (A \cup B)-C)$ which implies $B\subseteq A$
+  \end{itemize}
+  No comments for this proof. I felt like I understoof the question and was able to show equivilancy through proving that LHS was a subset of RHS and vice versa.
+\end{proof}
+\sect{Problem 8.22}+++
+\begin{proof}
+  Let A and B be sets. Prove that $A\subseteq B$ if and only if $A \cap B=A$
+  \begin{itemize}
+    \item \textbf{Proof: if $A\subseteq B$ then  $A \cap B=A$}\\\\
+    Suppose $A\subseteq B$ and let x be an element from A. Since A is a subset of B this implies that x is also an element of b.\\\\
+    Since A is a subset of B all elements of A are also elements of B meaning All elements in A are elements of $A\cap B$.\\
+    All elements in $A\cap B$ are also elements of A. \\
+    If all elements of A are also elements of $A \cap B$ and all elements of $A\cap B$ are also elements of A then $A=A\cap B$
+
+    \item \textbf{Proof: if  $A\cap B=A$ then $A\subseteq B$}\\\\
+    If $A\cap B$=A then the intersection of sets A and B is the entirety of the set A impliying that the entire set A is contained within B and by definition: $A\subseteq B$
+  \end{itemize}
+  This was probably the hardest proof for me on this assignment and required me to really think about how I wanted to craft my argument. I think I have covered my bases well and have defined the properties of the intersection or rather referenced them in such a way that I have insulated my argument.
+\end{proof}
+\sect{Problem 8.26}+++
+\begin{proof}
+  Prove that $\{4k+5:k\in\Z\}=\{4k+1:k\in\Z\}$
+  \begin{itemize}
+    \item \textbf{Proof $\{4k+5:k\in\Z\}\subseteq \{4k+1:k\in\Z\}$}\\
+    Let A=$\{4k+5:k\in\Z\}$ and B=$\{4k+1:k\in\Z\}$ and suppose that a $\in A$\\
+    If a $\in A$ then a is of the form 4k+5.
+    \\If a is of the form 4k+5 it can also be expressed as 4k+4+1 =4(k+1)+1 meaning that a can be expressed in the form 4n+1 when $n=k+1,m \in \Z$.\\ \\Thus $a \in A $ implies a$\in B$. So it follows that $A \subseteq B $ \\
+    \item \textbf{Proof $\{4k+1:k\in\Z\} \subseteq \{4k+5:k\in\Z\}$}\\
+    Let A=$\{4k+5:k\in\Z\}$ and B=$\{4k+1:k\in\Z\}$ and suppose that a $\in A$\\
+    Suppose $ b\in B $ then b is of the form 4k+1. \\When k is equal to k-1 all values of the set b can be expressed as 4(k-1)+5=4n+1 when n=k-1. \\\\Thus $b \in B $ implies b$\in A$. So it follows that $B \subseteq A$ \\
+  \end{itemize}
+  After the previous question this one was a nice repreive. It made me think though about the possible issues realted to formatting an algebraic set proof and I hope this is legible for the grader(hello).
+\end{proof}
+\newcommand{\h}{hello}
+\h
+\end{document}
