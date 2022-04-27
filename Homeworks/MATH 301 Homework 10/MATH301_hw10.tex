@@ -1,0 +1,116 @@
+\documentclass[12pt]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\pagestyle{empty}
+\author{Chris Camano: ccamano@sfsu.edu}
+\title{MATH 301  Homework 10 }
+\date{4/25/2022}
+
+\topmargin -0.6in
+\headsep 0.40in
+\oddsidemargin 0.0in
+\textheight 9.0in
+\textwidth 6.5in
+
+\newcommand{\econst}{\mathrm{e}}
+\newcommand{\diff}{\mathrm{d}}
+\newcommand{\dwrt}[1]{\frac{\diff}{\diff #1}}
+%%%%%%Macros for 425%%%%%%%%%%%%%%%%%%%
+\newcommand{\q}{\quad}
+\newcommand{\tab}{\\\\}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\newcommand{\sect}[1]{\section*{#1}}
+
+%%%%%%Vector Spaces%%%%%%%%%%%%%%%%%%%
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\rtwo}{\mathbb{R}^2}
+\newcommand{\mxn}{{mxn}}
+
+%%%%%%Sets and common phrases%%%%%%%%%
+\newcommand{\Axb}{\textbf{Ax=b} }
+\newcommand{\Axz}{\textbf{Ax=0} }
+\newcommand{\dim}{\text{dim}}
+\newcommand{\lc}{linear combination }
+\newcommand{\let}{\text{Let }}
+\newcommand{\tf}{\therefore}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\everymath={\displaystyle}
+
+
+\begin{document}
+\maketitle
+\sect{Problem 9.2}
+\begin{proof}
+  For every natural number n, the integer $2n^2-4n+31$ is prime\\
+  This statement is false. Consider any of the following numbers\\
+  These are the first examples up to 500 for which the statement above does not hold. \\\\
+  30 ,31 ,33 ,36 ,40 ,45 ,51 ,58 ,59 ,62 ,64 ,66 ,73 ,75 ,77 ,85 ,88 ,89 ,90 ,92 ,93 ,95 ,96 ,98 ,100 ,103 ,108 ,110 ,114 ,117 ,119 ,121 ,123 ,124 ,126 ,127 ,128 ,135 ,139 ,145 ,146 ,147 ,148 ,149 ,150 ,151 ,154 ,155 ,157 ,158 ,164 ,165 ,166 ,167 ,170 ,175 ,176 ,180 ,181 ,183 ,184 ,186 ,188 ,192 ,195 ,197 ,201 ,204 ,205 ,206 ,207 ,208 ,209 ,210 ,211 ,214 ,217 ,219 ,220 ,221 ,225 ,233 ,234 ,237 ,238 ,239 ,240 ,241 ,243 ,248 ,249 ,250 ,258 ,261 ,262 ,263 ,264 ,265 ,266 ,267 ,272 ,275 ,279 ,280 ,281 ,283 ,286 ,289 ,291 ,292 ,294 ,295 ,298 ,299 ,301 ,302 ,303 ,304 ,305 ,306 ,307 ,310 ,312 ,320 ,321 ,322 ,323 ,325 ,326 ,327 ,330 ,332 ,333 ,335 ,336 ,340 ,341 ,343 ,344 ,348 ,349 ,352 ,353 ,354 ,355 ,359 ,363 ,368 ,369 ,371 ,372 ,373 ,374 ,375 ,377 ,378 ,379 ,380 ,381 ,384 ,385 ,389 ,390 ,391 ,392 ,393 ,396 ,399 ,401 ,403 ,405 ,406 ,407 ,408 ,409 ,410 ,411 ,414 ,418 ,421 ,422 ,424 ,427 ,432 ,433 ,434 ,435 ,436 ,437 ,438 ,439 ,441 ,443 ,444 ,445 ,447 ,449 ,450 ,452 ,454 ,455 ,456 ,460 ,464 ,465 ,467 ,468 ,469 ,470 ,474 ,478 ,479 ,480 ,482 ,483 ,484 ,485 ,486 ,488 ,491 ,492 ,493 ,494 ,495 ,496 ,498 ,499 ,500\\\\
+  \\ all of these numbers are produced by the function above and are not prime. computed with c++
+\end{proof}
+\sect{Problem 9.6}
+\begin{proof}
+  If A,B,C,D are sets then :
+  \[
+    (A\times B)\cap (C\times D)=(A\cap C)\times(B\cap D)
+  \]
+  \textbf{Part 1 }
+  \[
+    (A\times B)\cap (C\times D)\subseteq(A\cap C)\times(B\cap D)
+  \]
+  Let (x,y) $\in (A\times B)\cap (C\times D)$. Then (x,y) is an element of $(A\times B)\land (C\times D)$.This means that x is an element of A and y is an element of B and that x is also an element of C and that y is also an element of D. \\
+  Since x is an element of A and C it is an element of $A\cap C$ \\
+  Since y is an element of B and D it is an element of $B\cap D$\\
+  This implies that $(x,y) \in (A\cap C)\times(B\cap D)$ since all ordered pairs x,y have the property that $x\in A\cap C$ and $y\in B\cap D$\\\\
+  \textbf{Part 2 }
+  \[
+    (A\cap C)\times(B\cap D)\subseteq(A\times B)\cap (C\times D)
+  \]
+  let (x,y) be an element of $  (A\cap C)\times(B\cap D)$. Then x is an element of $A\cap C$ and y is an element of $B\cap D$ . Since $x \in A \land y \in B$ (x,y)$\in A \times B$. \\ Since $x \in C \land y \in D$ (x,y)$\in C \times D$. Thus (x,y) is an element of $\in A \times B$ and $\in C \times D$, so (x,y) $\in (A\times B)\cap (C\times D)$ which implies $(A\cap C)\times(B\cap D)\subseteq(A\times B)\cap (C\times D)$
+\end{proof}
+\sect{Problem 9.14}
+\begin{proof}
+  If A and B are sets then :
+  \[
+    \mathCal{P}(A)\cap\mathcal{P}(B)=\mathcal{P}(A\cap B)
+  \]
+  \begin{align*}
+    &\mathCal{P}(A)\cap\mathcal{P}(B)\subseteq \mathcal{P}(A\cap B):\\
+  \end{align*}
+  Let x be an element of $\mathCal{P}(A)\cap\mathcal{P}(B)$ then $x\in \mathCal{P}(A) \land x \in \mathCal{P}(B)$ This implies that since x is in the power set of A and the power set of  B that it is a subset A and a subset of B. Since x is a subset of A and B
+  \[
+    X \in \mathcal{P}(A\cap B)
+  \]
+  \begin{align*}
+    &\mathcal{P}(A\cap B)\subseteq \mathCal{P}(A)\cap\mathcal{P}(B):\\
+  \end{align*}
+  Let x be an element of $\mathcal{P}(A\cap B)$. Then x is a subset of $A\cap B$. since all subsets of the intersection of A and B are subsets of the powerset of A and the powerset of B respectively this implies.
+  \[
+    x\in \mathCal{P}(A)\cap\mathcal{P}(B)
+  \]
+\end{proof}
+\sect{Problem 9.18}
+\begin{proof}
+  If a,b,c$\in \mathbb{N}$ then at least one of a-b,a+c and b-c is even.
+  \\
+  \textbf{Proof by contradiction}. Assume that all three of the relationships above are in fact odd. Then the sum of the terms a-b and b-c must be odd since :
+  \[
+    (b-c)+(a-b)=a-c
+  \]
+  and a-c is one of the numbers declared odd. However the sum of two odd numbers must be even so we arrive at a contradiction  proving the original statement by contraposition.
+\end{proof}
+\sect{Problem 9.24}
+\begin{proof}
+  The inequality $2^x\geq x+1$ is true for all positive real numbers x.
+
+  Consider the value x=$\frac{1}{3}$\\
+  \begin{align*}
+    &2^\frac{1}{3}\geq \frac{1}{3}+1\\
+    &1.25992 \geq 1.3333
+  \end{align*}
+  and it is shown that the statment is no longer true. Thus by counter example we demonstrate the statement above is false.
+    \end{proof}
+\sect{Bonus}
+\end{document}
