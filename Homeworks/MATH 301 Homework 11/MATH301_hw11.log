@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.21)  28 APR 2022 08:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.21)  30 APR 2022 13:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**MATH301_hw10.tex
-(./MATH301_hw10.tex
+**MATH301_hw11.tex
+(./MATH301_hw11.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-07-12>
 (c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
@@ -118,7 +118,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 
-./MATH301_hw10.tex:35: LaTeX Error: Command \dim already defined.
+./MATH301_hw11.tex:35: LaTeX Error: Command \dim already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -132,7 +132,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./MATH301_hw10.tex:37: LaTeX Error: Command \let already defined.
+./MATH301_hw11.tex:37: LaTeX Error: Command \let already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -150,8 +150,8 @@ File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count268
 \l__pdf_internal_box=\box52
 )
-(./MATH301_hw10.aux)
-\openout1 = `MATH301_hw10.aux'.
+(./MATH301_hw11.aux)
+\openout1 = `MATH301_hw11.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
 LaTeX Font Info:    ... okay on input line 43.
@@ -203,20 +203,46 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-./MATH301_hw10.tex:46: LaTeX Error: Environment proof undefined.
+./MATH301_hw11.tex:49: LaTeX Error: Environment proof undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 \begin{proof}
+l.49 \begin{proof}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./MATH301_hw10.tex:55: LaTeX Error: \begin{document} ended by \end{proof}.
+./MATH301_hw11.tex:51: LaTeX Error: \begin{document} ended by \end{proof}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \end{proof}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./MATH301_hw11.tex:53: LaTeX Error: Environment proof undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \begin{proof}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./MATH301_hw11.tex:55: LaTeX Error: \begin{document} ended by \end{proof}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -229,27 +255,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--56
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--56
-
- []
-
-
-./MATH301_hw10.tex:57: LaTeX Error: Environment proof undefined.
+./MATH301_hw11.tex:57: LaTeX Error: Environment proof undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -261,238 +267,142 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[1
 
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 66--72
-
- []
-
-
-./MATH301_hw10.tex:79: LaTeX Error: \begin{document} ended by \end{proof}.
+./MATH301_hw11.tex:59: LaTeX Error: \begin{document} ended by \end{proof}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 \end{proof}
+l.59 \end{proof}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--80
-
- []
-
-
-./MATH301_hw10.tex:81: LaTeX Error: Environment proof undefined.
+./MATH301_hw11.tex:61: LaTeX Error: Environment proof undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 \begin{proof}
+l.61 \begin{proof}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./MATH301_hw10.tex:85: Undefined control sequence.
-l.85     \mathCal
-                 {P}(A)\cap\mathcal{P}(B)=\mathcal{P}(A\cap B)
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-./MATH301_hw10.tex:89: Undefined control sequence.
-<argument>  &\mathCal 
-                      {P}(A)\cap \mathcal {P}(B)\subseteq \mathcal {P}(A\cap...
-l.89   \end{align*}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./MATH301_hw10.tex:89: Undefined control sequence.
-<argument>  &\mathCal 
-                      {P}(A)\cap \mathcal {P}(B)\subseteq \mathcal {P}(A\cap...
-l.89   \end{align*}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./MATH301_hw10.tex:90: Undefined control sequence.
-<recently read> \mathCal 
-                         
-l.90   Let x be an element of $\mathCal
-                                       {P}(A)\cap\mathcal{P}(B)$ then $x\in ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./MATH301_hw10.tex:90: Undefined control sequence.
-l.90 ...(A)\cap\mathcal{P}(B)$ then $x\in \mathCal
-                                                  {P}(A) \land x \in \mathCa...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./MATH301_hw10.tex:90: Undefined control sequence.
-l.90 ... $x\in \mathCal{P}(A) \land x \in \mathCal
-                                                  {P}(B)$ This implies that ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./MATH301_hw10.tex:96: Undefined control sequence.
-<argument> ...hcal {P}(A\cap B)\subseteq \mathCal 
-                                                  {P}(A)\cap \mathcal {P}(B)...
-l.96   \end{align*}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./MATH301_hw10.tex:96: Undefined control sequence.
-<argument> ...hcal {P}(A\cap B)\subseteq \mathCal 
-                                                  {P}(A)\cap \mathcal {P}(B)...
-l.96   \end{align*}
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./MATH301_hw10.tex:99: Undefined control sequence.
-l.99     x\in \mathCal
-                      {P}(A)\cap\mathcal{P}(B)
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./MATH301_hw10.tex:103: LaTeX Error: \begin{document} ended by \end{proof}.
+./MATH301_hw11.tex:63: LaTeX Error: \begin{document} ended by \end{proof}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \end{proof}
-                 
+l.63 \end{proof}
+                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--104
-
- []
-
-[2]
-
-./MATH301_hw10.tex:105: LaTeX Error: Environment proof undefined.
+./MATH301_hw11.tex:65: LaTeX Error: Environment proof undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.105 \begin{proof}
-                   
+l.65 \begin{proof}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./MATH301_hw10.tex:115: LaTeX Error: \begin{document} ended by \end{proof}.
+./MATH301_hw11.tex:67: LaTeX Error: \begin{document} ended by \end{proof}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.115 \end{proof}
-                 
+l.67 \end{proof}
+                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./MATH301_hw10.tex:117: LaTeX Error: Environment proof undefined.
+./MATH301_hw11.tex:69: LaTeX Error: Environment proof undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 \begin{proof}
-                   
+l.69 \begin{proof}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
-
- []
-
-
-./MATH301_hw10.tex:129: LaTeX Error: \begin{document} ended by \end{proof}.
+./MATH301_hw11.tex:71: LaTeX Error: \begin{document} ended by \end{proof}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129     \end{proof}
-                     
+l.71 \end{proof}
+                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--130
+./MATH301_hw11.tex:73: LaTeX Error: Environment proof undefined.
 
- []
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 \begin{proof}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-[3] (./MATH301_hw10.aux) ) 
+
+./MATH301_hw11.tex:75: LaTeX Error: \begin{document} ended by \end{proof}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \end{proof}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
+
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./MATH301_hw11.aux) ) 
 Here is how much of TeX's memory you used:
- 2385 strings out of 478542
- 31512 string characters out of 5854402
- 333313 words of memory out of 5000000
- 20327 multiletter control sequences out of 15000+600000
- 411886 words of font info for 60 fonts, out of 8000000 for 9000
+ 2359 strings out of 478542
+ 31234 string characters out of 5854402
+ 324313 words of memory out of 5000000
+ 20308 multiletter control sequences out of 15000+600000
+ 407232 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,66p,1139b,211s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c
-:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/
-2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfon
-ts/symbols/msbm10.pfb>
-Output written on MATH301_hw10.pdf (3 pages, 97893 bytes).
+ 57i,6n,66p,228b,211s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
+fb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on MATH301_hw11.pdf (1 page, 34849 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 23 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
